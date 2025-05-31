@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        body {
+            color:white
+        }
+
+        #vanta-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div id="vanta-background"></div>
+
+
+<main class="flex items-center min-h-screen px-40">
+    <section>
+        <div class="max-w-xl bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg p-6"
+             data-aos="zoom-out-up" data-aos-delay="500">
+            <p class="text-2xl font-semibold">Über mich:</p>
+            <br>
+            <p class="text-lg">
+                Derzeit befinde ich mich im zweiten Lehrjahr meiner Ausbildung zum Anwendungsentwickler.
+                Während meiner Ausbildung habe ich mir verschiedene Programmiersprachen und Frameworks angeeignet.
+                In meiner Freizeit bilde ich mich kontinuierlich weiter, um mein Wissen noch mehr zu vertiefen.
+            </p>
+        </div>
+    </section>
+
+    <section class="ml-auto mt-[-5px] max-w-xl bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg p-6"
+             data-aos="zoom-out-up" data-aos-delay="500">
+        <div>
+            <p class="text-2xl font-semibold">Meine Skills:</p>
+            <div class="grid grid-cols-2 gap-4 place-items-center">
+                <img src="./assets/java.png" alt="java" class="w-[150px] h-auto">
+                <img src="./assets/spring.png" alt="spring" class="w-[150px] h-auto">
+                <img src="./assets/js.png" alt="js" class="w-[50px] h-auto">
+                <img src="./assets/vue.png" alt="vue" class="w-[50px] h-auto">
+                <img src="./assets/docker.png" alt="docker" class="w-[100px] h-auto translate-x-4">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="flex items-start justify-center min-h-screen p-[200px]">
+    <section class="max-w-2xl bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg p-6"
+             data-aos="zoom-out-up" data-aos-delay="500">
+        <p class="text-3xl font-bold">Bisherige Projekte:</p>
+        <br>
+        <ul class="list-disc list-inside text-xl">
+            <li>Interne Zeiterfassung
+                <ul class="list-inside ml-6 text-lg">
+                    <li>Bei diesem Projekt habe ich sowohl das Frontend mit Vue als auch das Backend mit Spring eigenständig umgesetzt.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Private Projekte
+                <ul class="list-inside ml-6 text-lg">
+                    <li>Gelerntes aus Schulungen habe ich in privaten Projekten wie einem Trello-Klon oder einem digitalen Kochbuch mit Vue.js umgesetzt.</li>
+                </ul>
+            </li>
+            <br>
+            <li>Schulprojekte
+                <ul class="list-inside ml-6 text-lg">
+                    <li>Ein D&D-Verwaltungstool habe ich entwickelt, das es ermöglicht, Helden zu erstellen und zu verwalten –
+                        mit einem Vue.js-Frontend,
+                        einem Spring-Backend sowie einer sicheren Authentifizierung über JWT.</li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+</footer>
+
+
+
+<script>
+    VANTA.NET({
+        el: "#vanta-background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffffff,
+        backgroundColor: 0x000000
+    })
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
